@@ -1,4 +1,4 @@
-<img width="432" height="16" alt="image" src="https://github.com/user-attachments/assets/3b567bfa-314e-41a8-a49b-58ff811b88b4" /># NEKBDD: a nonparametric ensemble knowledge-based and data-driven method for genetic network construction
+# NEKBDD: a nonparametric ensemble knowledge-based and data-driven method for genetic network construction
 
 
 ## Description
