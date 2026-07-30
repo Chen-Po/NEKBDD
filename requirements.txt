@@ -1,0 +1,10 @@
+# NP.ENS KBDD — Python dependencies
+# Core package (NEKBDD) requires: numpy, pandas, powerlaw, networkx.
+# matplotlib is used only by the tutorial notebook.
+# Lower bounds below are conservative; the versions the code was last verified with
+# (Python 3.9) are listed in the trailing comments.
+numpy>=1.21        # verified: 2.0.2
+pandas>=1.3        # verified: 2.3.3
+powerlaw>=1.5      # verified: 2.0.0
+networkx>=2.6      # verified: 3.2.1
+matplotlib>=3.4    # verified: 3.9.4  (tutorial only)

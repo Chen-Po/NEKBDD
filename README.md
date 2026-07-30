@@ -26,6 +26,17 @@ pip install NEKBDD
 ![image](https://github.com/Chen-Po/KBDD/assets/109202495/5c619eda-8f82-488b-b9cc-9bc76d1e6a7f)
 
 
+## Requirements
+See `requirements.txt`. Core dependencies: `numpy`, `pandas`, `powerlaw`, `networkx` (and `matplotlib` for the tutorial). Install with `pip install -r requirements.txt`.
+
+## Reproducibility
+The labelling step (step 7) dominates runtime: at every hill-climb iteration it evaluates the
+network score Σ C[i,j]·A[i,j] and accepts a proposed permutation only when the score strictly
+increases, so the labelling outcome depends on the random permutation sequence. For reproducible
+labelling, set both the `numpy` and `random` seeds before calling `Network_score_with_cor`. The
+per-structure labelling is embarrassingly parallel (each candidate structure is independent), so
+it can be parallelised across structures with independent per-structure seeds.
+
 ## Reference
 Chen-Po Liao, Hung-Ching Chang, Chuhsing Kate Hsiao. "A nonparametric ensemble knowledge-based and data-driven method for genetic network construction
 " (2024)

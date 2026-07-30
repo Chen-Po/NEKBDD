@@ -18,7 +18,8 @@ setuptools.setup(
     install_requires=[
         'numpy',
         'pandas',
-        'powerlaw'
+        'powerlaw',
+        'networkx'
     ],
     python_requires='>=3.6',
 )
