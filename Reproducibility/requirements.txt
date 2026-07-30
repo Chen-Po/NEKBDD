@@ -1,0 +1,13 @@
+# Reproducibility environment for the notebooks in this folder.
+#
+# Install with:  pip install -r requirements.txt
+#
+
+powerlaw==1.5
+numpy==1.20.3
+pandas==1.4.4
+networkx==3.2.1
+scipy==1.7.3
+pingouin==0.5.4       # partial correlation (application notebook only)
+matplotlib==3.4.3
+joblib==1.5.1         # parallel net_gen / labelling
