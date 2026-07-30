@@ -1,4 +1,4 @@
-# NEKBDD: a nonparametric ensemble knowledge-based and data-driven method for genetic network construction
+<img width="432" height="16" alt="image" src="https://github.com/user-attachments/assets/3b567bfa-314e-41a8-a49b-58ff811b88b4" /># NEKBDD: a nonparametric ensemble knowledge-based and data-driven method for genetic network construction
 
 
 ## Description
@@ -29,14 +29,8 @@ pip install NEKBDD
 ## Requirements
 See `requirements.txt`. Core dependencies: `numpy`, `pandas`, `powerlaw`, `networkx` (and `matplotlib` for the tutorial). Install with `pip install -r requirements.txt`.
 
-## Reproducibility
-The labelling step (step 7) dominates runtime: at every hill-climb iteration it evaluates the
-network score Σ C[i,j]·A[i,j] and accepts a proposed permutation only when the score strictly
-increases, so the labelling outcome depends on the random permutation sequence. For reproducible
-labelling, set both the `numpy` and `random` seeds before calling `Network_score_with_cor`. The
-per-structure labelling is embarrassingly parallel (each candidate structure is independent), so
-it can be parallelised across structures with independent per-structure seeds.
+## Reproducibility (`Reproducibility/`)
+`Reproducibility/` holds the current, self-contained version of the analysis: two notebooks — the *P* = 10 simulation and the breast JAK-STAT application — that define all core functions inline and ship with the data they read, together with `requirements.txt`. Install the requirements and run either notebook top to bottom from that folder. See `Reproducibility/README.md` for details.
 
 ## Reference
-Chen-Po Liao, Hung-Ching Chang, Chuhsing Kate Hsiao. "A nonparametric ensemble knowledge-based and data-driven method for genetic network construction
-" (2024)
+Chen-Po Liao, Hung-Ching Chang, Charlotte Wang, Chuhsing Kate Hsiao. "A nonparametric ensemble knowledge-based and data-driven method for genetic network construction"
